@@ -1,12 +1,12 @@
 "use client"
 import Image from "next/image"
 
-const ServiceCard = ({title, description}) => {
+const ServiceCard = ({title, description, imageSrc}) => {
   return (
     <div className="keen-slider__slide bg-white shadow-lg text-center p-6 rounded-lg">
       <div className="w-full h-48 relative mb-4 rounded-lg overflow-hidden">
         <Image
-          src="/images/OilChange.png"
+          src={imageSrc}
           alt={title}
           fill
           className="object-cover"

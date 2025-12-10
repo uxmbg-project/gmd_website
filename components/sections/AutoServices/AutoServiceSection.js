@@ -17,7 +17,7 @@ const AutoServiceSection = () => {
       <HeadingLeftImageRight 
         heading="Reliable Mechanics for Peak Performance"
         content="At GMD Auto & Smash Repair, our certified mechanical team provides comprehensive maintenance and repair to keep your car safe and running efficiently. We service all makes and models with integrity and expertise."
-        image="/images/OilChange.png"
+        image="/images/services/AutoRepair1.jpg"
       />
 
       <HeadingWithImageSlider
@@ -29,8 +29,8 @@ const AutoServiceSection = () => {
           "Major Service: Comprehensive inspection, replacement of filters (air, fuel, cabin), spark plugs, and detailed performance checks.",
         ]}
         // Pass images as image1 and image2 for sliding
-        image1="/images/OilChange.png"
-        image2="/images/NotAtFaultClaim/FamilyGoing.jpg"
+        image1="/images/services/AutoRepair2.jpg"
+        image2="/images/services/AutoRepair3.jpg"
       />
     </div>
   )

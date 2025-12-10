@@ -16,7 +16,7 @@ const NotAtFaultCarHireSection = () => {
         content="Whilst your damaged car is waiting to be assessed, we’ll organise Same Day Delivery of a rental vehicle to your doorstep. Then we’ll work on recovering the costs from the at fault party so your car can be repaired.
                 Speak with us today and we’ll get you back on the road with Courtesy Car Hire."
 
-        image="/images/NotAtFaultClaim/FamilyGoing.jpg"
+        image="/images/NotAtFaultHireCar/NotAtFaultHireCar1.jpg"
       />
 
       <SlideableCard 
@@ -30,7 +30,7 @@ const NotAtFaultCarHireSection = () => {
         heading="You don’t need to submit an insurance claim if you have insurance." 
         content="You’re still eligible for a rental car after an accident. Insured and Uninsured drivers have the same rights when they are Not At Fault.
                 You would be surprised to hear most of our Not At Fault Car Hire clients DO have insurance cover.Our clients prefer our boutique Not At Fault Accident Car Hire Service rather than going through their car insurance company." 
-        image="/images/NotAtFaultClaim/FamilyGoing.jpg"
+        image="/images/NotAtFaultHireCar/NotAtFaultHireCar2.jpeg"
       />
 
 

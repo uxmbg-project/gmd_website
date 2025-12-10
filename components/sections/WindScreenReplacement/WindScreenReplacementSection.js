@@ -16,7 +16,7 @@ const WindScreenReplacementSection = () => {
       <HeadingLeftImageRight 
         heading="Why Choose GMD for Auto Glass?"
         content="Whether the damage is too large to repair or the screen is severely cracked, we provide a complete replacement service."
-        image="/images/OilChange.png"
+        image="/images/services/WindScreen.jpg"
       />
 
       <HeadingWithImageSlider
@@ -30,8 +30,8 @@ const WindScreenReplacementSection = () => {
           "Guaranteed Accuracy: Ensures your safety features function correctly immediately after installation."
         ]}
         // Pass images as image1 and image2 for sliding
-        image1="/images/OilChange.png"
-        image2="/images/NotAtFaultClaim/FamilyGoing.jpg"
+        image1="/images/services/WindScreen1.jpg"
+        image2="/images/services/WindScreen2.jpg"
       />
     </div>
   )

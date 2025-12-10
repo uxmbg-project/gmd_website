@@ -16,7 +16,7 @@ const RentalServicesSection = () => {
       <HeadingLeftImageRight 
         heading="Keeping You on the Road During Repairs"
         content="We understand being without your car is inconvenient. GMD Auto offers flexible rental and courtesy car solutions while your vehicle is in our workshop for repairs."
-        image="/images/OilChange.png"
+        image="/images/services/RentalImage.jpg"
       />
 
       <HeadingWithImageSlider
@@ -28,8 +28,8 @@ const RentalServicesSection = () => {
           "Insurance Hire: If your smash repair is covered by insurance, we can help facilitate a hire car claim through your policy (check your specific coverage).",
         ]}
         // Pass images as image1 and image2 for sliding
-        image1="/images/OilChange.png"
-        image2="/images/NotAtFaultClaim/FamilyGoing.jpg"
+        image1="/images/services/RentalImage2.jpg"
+        image2="/images/services/RentalImage3.jpeg"
       />
     </div>
   )

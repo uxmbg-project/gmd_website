@@ -16,7 +16,7 @@ const TowingServicesSection = () => {
       <HeadingLeftImageRight 
         heading="Available 24/7 When You Need Us Most"
         content="When the unexpected happens, GMD Auto is here to help. We offer reliable, fast, and safe towing services for breakdowns and accidents across the region."
-        image="/images/OilChange.png"
+        image="/images/services/TowImage.jpg"
       />
 
       <HeadingWithImageSlider
@@ -30,8 +30,8 @@ const TowingServicesSection = () => {
           "Direct Workshop Access: Tow your vehicle directly to our facility for immediate repair scheduling and quotes."
         ]}
         // Pass images as image1 and image2 for sliding
-        image1="/images/OilChange.png"
-        image2="/images/NotAtFaultClaim/FamilyGoing.jpg"
+        image1="/images/services/TowImage1.jpg"
+        image2="/images/services/TowImage2.jpg"
       />
     </div>
   )
