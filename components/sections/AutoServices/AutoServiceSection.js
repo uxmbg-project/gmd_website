@@ -10,8 +10,9 @@ const AutoServiceSection = () => {
   return (
     <div>
       <ServiceHero
-        title="⚙️ Auto Services (Mechanical & Maintenance)"
+        title="Mechanical & Maintenance"
         content="We specialize in high-quality repair services, restoring your car to factory perfection with expert care."
+        backgroundImage="/logo/MechanicalImage.png"
       />
 
       <HeadingLeftImageRight 

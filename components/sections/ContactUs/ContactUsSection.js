@@ -4,7 +4,7 @@ import Hero from '../Hero'
 const ContactUsSection = () => {
   return (
     <div>
-        <Hero Heading="Contact GMD Smash & Auto Repairs" subtitle="What you want to know About Us?"/>
+        <Hero Heading="GMD Auto Group" subtitle="Driven By Excellence" backgroundImage='/logo/HeroImages.png'/>
     </div>
   )
 }

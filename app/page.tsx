@@ -11,7 +11,7 @@ import GMDAbout from "@/components/features/GMDAbout/GMDAboutSection"
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Hero Heading="GMD Auto & Smash Repairs" subtitle="Please find the best services we provide, ensuring quality and reliability for your vehicle." />
+      <Hero backgroundImage='/logo/HeroImages.png' Heading="GMD Auto Group" subtitle="Driven By Excellence" />
       <ServiceSection />
       <ChoosingUs />
       <ConsultationSection />

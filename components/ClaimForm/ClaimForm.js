@@ -6,40 +6,11 @@ import OffendingVehicle from './steps/OffendingVehicle'
 import AccidentDetails from './steps/AccidentDetails'
 import AuthorityToAct from './steps/AuthorityToAct'
 import { send } from '@emailjs/browser'
+import { initialFormData } from '../../app/data/ClaimFormFieldsStateData'
 
 const ClaimForm = () => {
   const [step, setStep] = useState(1)
-  const [formData, setFormData] = useState({
-    // Your Details
-    rego: '', make: '', model: '', year: '',
-    insured: '', insuranceCompany: '', claimNumber: '',
-    businessRegistered: '', businessName: '', gstRegistered: '',
-    firstName: '', lastName: '', street: '', suburb: '', postcode: '',
-    state: '', contactNumber: '', email: '', driverFirstName: '', driverLastName: '',
-    driverStreet: '', driverSuburb: '', driverPostcode: '', driverState: '',
-    driverContact: '', driverEmail: '', licenseNumber: '', licenseExpiry: '', dob: '',
-    licenseFront: null, licenseBack: null,
-
-    // Offending Vehicle Details
-    offenderRego: '', offenderMake: '', offenderModel: '', offenderYear: '',
-    offenderInsured: '', offenderInsuranceCompany: '', offenderClaimNumber: '',
-    offenderHasOwnerInfo: '', offenderOwnerFirstName: '', offenderOwnerLastName: '',
-    offenderOwnerStreet: '', offenderOwnerSuburb: '', offenderOwnerPostcode: '',
-    offenderOwnerState: '', offenderOwnerContact: '', offenderOwnerEmail: '',
-    offenderLicenseNumber: '', offenderLicenseExpiry: '', offenderDOB: '',
-    offenderLicenseFront: null, offenderLicenseBack: null,
-    offenderDriverDifferent: '', offenderDriverFirstName: '', offenderDriverLastName: '',
-    offenderDriverStreet: '', offenderDriverSuburb: '', offenderDriverPostcode: '',
-    offenderDriverState: '', offenderDriverContact: '', offenderDriverEmail: '',
-    offenderDriverLicenseNumber: '', offenderDriverLicenseExpiry: '', offenderDriverDOB: '',
-    offenderDriverLicenseFront: null, offenderDriverLicenseBack: null,
-
-    // Accident Details
-    accidentDate: '', accidentLocation: '', accidentDescription: '', accidentPhotos: [],
-    
-    // Authority To Act
-    authorize: false
-  })
+  const [formData, setFormData] = useState(initialFormData)
 
   const handleNext = () => setStep(prev => prev + 1)
   const handlePrev = () => setStep(prev => prev - 1)
@@ -53,9 +24,11 @@ const ClaimForm = () => {
         formData,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
+
       alert('Claim submitted successfully!')
       setStep(1)
-      setFormData({})
+      setFormData(initialFormData)
+
     } catch (err) {
       console.error(err)
       alert('Error submitting claim. Try again.')

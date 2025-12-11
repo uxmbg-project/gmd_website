@@ -5,7 +5,7 @@ import AboutUsContent from './AboutUsContent'
 const AboutUsSection = () => {
   return (
     <div>
-        <Hero Heading="GMD Autos & Smash Repairs" subtitle="What you want to know About Us?"/>
+        <Hero Heading="GMD Autos & Smash Repairs" subtitle="What you want to know About Us?" backgroundImage="/images/PlanBackground.png"/>
         <AboutUsContent />
     </div>
   )

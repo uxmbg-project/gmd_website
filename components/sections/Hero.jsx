@@ -1,19 +1,26 @@
 "use client";
 
-export default function Hero({Heading, subtitle}) {
+export default function Hero({ Heading, subtitle, backgroundImage }) {
   return (
-    <section className="relative bg-red-600 w-full h-[400px] md:h-[400px] lg:h-[400px] overflow-hidden">
-      
+    <section
+      className="relative w-full h-[400px] md:h-[400px] lg:h-[400px] overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
       {/* Overlay for content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 bg-black/40">
+        <h1 className="text-4xl font-[Open_Sans] md:text-6xl font-extrabold text-white opacity-75 mb-4">
           {Heading}
         </h1>
-        <p className="text-lg md:text-2xl text-white/90 mb-6 max-w-xl">
+
+        <div className="text-lg md:text-2xl text-white/90 mb-6 opacity-90 max-w-xl">
           {subtitle}
-        </p>
-        <button className="bg-white text-red-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition duration-300">
-          Get Started
+          <div className="mx-auto mt-2 w-24 h-1 bg-[#E62600] rounded"></div>
+        </div>
+        {/* Uncomment if you want a button */}
+        <button className="bg-[#E62600] mt-10 text-white hover:bg-white hover:text-black font-semibold py-3 px-8 rounded-lg transition duration-300">
+          Make A Claim
         </button>
       </div>
 

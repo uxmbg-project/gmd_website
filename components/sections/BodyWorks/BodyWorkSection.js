@@ -11,6 +11,7 @@ const BodyWorkSection = () => {
       <ServiceHero
         title="🎨 Body Repairs & Smash Repair Excellence"
         content="We specialize in high-quality body repairs, from removing minor door dings to restoring vehicles after major collisions. Our highly skilled panel beaters and spray painters guarantee excellence."
+        backgroundImage='/images/services/BodyWorkHero.png'
       />
 
       <HeadingLeftImageRight 
