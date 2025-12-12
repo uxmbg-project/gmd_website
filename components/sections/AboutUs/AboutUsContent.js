@@ -17,6 +17,17 @@ const AboutUsContent = () => {
           <p className="text-gray-700 text-center leading-relaxed">{item.description}</p>
         </div>
       ))}
+
+      <div>
+        <h3>Job Opportunities</h3>
+        <div className='flex text-center justify-center item-center bg-grey-400'>
+          <h4 className="text-lg">Software Engineer</h4>
+          <div>Created At: 4 Dec 2025</div>
+
+
+        </div>
+
+      </div>
     </div>
   );
 };

@@ -17,20 +17,66 @@ const ClaimForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
     try {
       await send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formData,
+        {
+          // DRIVER DETAILS
+          driver_first_name: formData.driver.firstName,
+          driver_last_name: formData.driver.lastName,
+          driver_email: formData.driver.email,
+          driver_phone: formData.driver.phone,
+          driver_address: formData.driver.address,
+          driver_suburb: formData.driver.suburb,
+          driver_state: formData.driver.state,
+          driver_postcode: formData.driver.postcode,
+          driver_dob: formData.driver.dob,
+          driver_licence: formData.driver.licenceNo,
+          driver_licence_expiry: formData.driver.licenceExpiry,
+
+          // ACCIDENT DETAILS
+          accident_place: formData.accident.place,
+          accident_date: formData.accident.accidentDate,
+          accident_time: formData.accident.accidentTime,
+          accident_road_surface: formData.accident.roadSurface,
+          accident_pre_existing: formData.accident.preExistingDamage,
+          accident_vehicle_location: formData.accident.vehicleLocation,
+          accident_what_happened: formData.accident.whatHappened,
+
+          // THIRD PARTY VEHICLE
+          third_make: formData.thirdParty.make,
+          third_model: formData.thirdParty.model,
+          third_year: formData.thirdParty.year,
+          third_insured: formData.thirdParty.insured,
+          third_rego: formData.thirdParty.rego,
+          third_cover_company: formData.thirdParty.coverCompany,
+
+          // THIRD PARTY OWNER
+          third_owner_first: formData.thirdParty.owner.firstName,
+          third_owner_last: formData.thirdParty.owner.lastName,
+          third_owner_phone: formData.thirdParty.owner.phone,
+          third_owner_address: formData.thirdParty.owner.address,
+          third_owner_suburb: formData.thirdParty.owner.suburb,
+          third_owner_state: formData.thirdParty.owner.state,
+          third_owner_postcode: formData.thirdParty.owner.postcode,
+
+          // AUTHORITY
+          authority_agreed: formData.authority.agreed ? "Yes" : "No",
+          authority_date: formData.authority.signatureDate,
+        },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
 
       alert('Claim submitted successfully!')
+
+      // Reset everything
       setStep(1)
       setFormData(initialFormData)
 
     } catch (err) {
-      console.error(err)
+      console.error('EmailJS Error:', err)
       alert('Error submitting claim. Try again.')
     }
   }
@@ -78,6 +124,7 @@ const ClaimForm = () => {
             Previous
           </button>
         )}
+
         {step < 4 ? (
           <button
             type="button"

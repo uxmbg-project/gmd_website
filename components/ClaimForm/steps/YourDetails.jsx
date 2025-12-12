@@ -49,6 +49,8 @@ const YourDetails = ({ formData, setFormData }) => {
             <option value="">--Select Fault--</option>
             <option value="My Fault">My Fault</option>
             <option value="Not My Fault">Not My Fault</option>
+            <option value="Dispute">Dispute</option>
+
           </select>
         </div>
 
