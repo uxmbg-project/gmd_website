@@ -2,18 +2,18 @@ import { Key, Car } from 'lucide-react';
 
 const ConsultationContent = () => {
   return (
-    <div className="space-y-10 bg-gray-50 dark:bg-gray-900 p-6 md:p-12 rounded-lg shadow-lg">
+    <div className="space-y-10 bg-gray-50 dark:bg-gray-50 p-6 md:p-12 rounded-lg shadow-lg">
 
       <div className="text-center md:text-left">
-        <h5 className="text-3xl font-bold text-gray-800 dark:text-gray-100">If You Are Not At Fault?</h5>
+        <h5 className="text-3xl font-bold text-gray-800 dark:text-gray-800">If You Are Not At Fault?</h5>
         <h5 className="text-3xl font-bold text-red-600 mb-4">Not At Fault Claims</h5>
-        <p className="text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto md:mx-0">
+        <p className="text-base text-gray-700 dark:text-gray-800 max-w-2xl mx-auto md:mx-0">
           Did you know that you don’t need to go through your current insurer and pay their excess if you weren’t at fault?
         </p>
       </div>
 
       {/* Option 1: Loan car */}
-      <div className="flex flex-col sm:flex-row items-start gap-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300">
+      <div className="flex flex-col sm:flex-row items-start gap-6 bg-white dark:bg-gray-100 p-6 rounded-lg shadow hover:shadow-2xl transition-shadow duration-300">
         <div className="flex-none text-red-600">
           <Key size={48} />
         </div>

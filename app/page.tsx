@@ -10,7 +10,7 @@ import GMDAbout from "@/components/features/GMDAbout/GMDAboutSection"
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dark:bg-white">
       <Hero backgroundImage='/logo/HeroImages.png' Heading="GMD Auto Group" subtitle="Driven By Excellence" />
       <ServiceSection />
       <ChoosingUs />
