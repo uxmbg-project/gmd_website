@@ -1,5 +1,6 @@
 "use client"
 import { Key, Car } from 'lucide-react';
+import Link from 'next/link';
 
 const ConsultationContent = () => {
   return (
@@ -41,7 +42,7 @@ const ConsultationContent = () => {
 
       {/* Call-to-action button */}
       <div className="text-center mt-4">
-        <a href="/claim-form" className="
+        <Link href="/claim-form" className="
           inline-block 
           bg-red-600 text-white font-semibold 
           px-6 py-3 rounded-lg 
@@ -51,7 +52,7 @@ const ConsultationContent = () => {
         "
         >
           Make A Claim
-        </a>
+        </Link>
       </div>
 
     </div>

@@ -17,7 +17,6 @@ export default function TestimonialSlider() {
     slides: { perView: 1, spacing: 0 },
   });
 
-  // If content dynamically changes, update slider
   useEffect(() => {
     slider.current?.update();
   }, [slider]);
@@ -26,8 +25,18 @@ export default function TestimonialSlider() {
     <div className="relative max-w-3xl mx-auto px-4">
       <div ref={sliderRef} className="keen-slider">
         {testimonials.map((t, idx) => (
-          <div key={idx} className="keen-slider__slide w-full flex items-center justify-center p-6 sm:p-12">
-            <div className=" rounded-xl  p-8 text-center">
+          <div key={idx} className="keen-slider__slide w-full flex flex-col items-center justify-center p-6 sm:p-12">
+            {/* Avatar from the web */}
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-4">
+              <img
+                src={`https://ui-avatars.com/api/?name=${encodeURIComponent(t.name)}&background=E62600&color=fff&size=128`}
+                alt={t.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Quote Card */}
+            <div className="rounded-xl p-8 text-center">
               <p className="text-lg md:text-xl text-gray-700 dark:text-gray-700 mb-4">“{t.quote}”</p>
               <h4 className="text-xl font-semibold text-red-600">— {t.name}</h4>
             </div>

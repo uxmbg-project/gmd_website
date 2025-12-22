@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Hero from "../Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const AboutUsSection = () => {
   useEffect(() => {
@@ -44,9 +45,10 @@ const AboutUsSection = () => {
           data-aos="fade-up"
           className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg"
         >
-          GMD Auto Group delivers high-quality mechanical and smash repair
-          services using modern technology, skilled technicians, and a
-          customer-first approach.
+          At <strong>GMD Auto Group</strong>, we provide comprehensive automotive solutions designed with 
+          our customers in mind. From regular servicing to accident repair, 
+          our team of skilled technicians ensures your vehicle is in safe, reliable hands.
+
         </p>
       </section>
 
@@ -54,8 +56,8 @@ const AboutUsSection = () => {
       <section className="max-w-6xl mx-auto px-4 mt-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "10+", label: "Years Experience" },
-            { value: "5,000+", label: "Vehicles Serviced" },
+            { value: "5+", label: "Years Experience" },
+            { value: "1,000+", label: "Vehicles Serviced" },
             { value: "100%", label: "Certified Technicians" },
             { value: "99%", label: "Customer Satisfaction" },
           ].map((item, i) => (
@@ -123,40 +125,8 @@ const AboutUsSection = () => {
           >
             {/* Replace with real image later */}
             <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">
-              Workshop / Team Image
+              <img src="/images/services/GMDAbout.png" className="object-contain" />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-6xl mx-auto px-4">
-          <h3
-            data-aos="fade-up"
-            className="text-3xl font-bold text-center mb-14"
-          >
-            Our Expertise
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-            {[
-              "Smash Repairs",
-              "Mechanical Repairs",
-              "Panel Beating",
-              "Spray Painting",
-              "Insurance Repairs",
-              "Fleet Services",
-            ].map((service, i) => (
-              <div
-                key={i}
-                data-aos="fade-up"
-                data-aos-delay={i * 80}
-                className="bg-white border border-gray-200 rounded-2xl py-6 text-center hover:border-red-600 hover:text-red-600 transition"
-              >
-                <p className="text-sm font-medium">{service}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -178,16 +148,19 @@ const AboutUsSection = () => {
           dependable automotive solutions you can rely on.
         </p>
 
-        <a
+        <Link
           data-aos="fade-up"
           href="/contact"
           className="inline-flex items-center gap-2 border border-red-600 text-red-600 px-10 py-4 rounded-full font-semibold hover:bg-red-600 hover:text-white transition"
         >
           Contact Us
-        </a>
+        </Link>
       </section>
     </div>
   );
 };
 
 export default AboutUsSection;
+
+
+

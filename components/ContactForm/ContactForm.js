@@ -114,7 +114,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pb-8 pt-1 bg-gray-50">
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-red-600 mb-2">
           Send Us a Message

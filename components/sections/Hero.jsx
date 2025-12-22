@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero({ Heading, subtitle, backgroundImage }) {
   return (
     <section
@@ -19,9 +21,9 @@ export default function Hero({ Heading, subtitle, backgroundImage }) {
           <div className="mx-auto mt-2 w-24 h-1 bg-[#E62600] rounded"></div>
         </div>
         {/* Uncomment if you want a button */}
-        <a href="/claim-form" className="bg-[#E62600] mt-10 text-white hover:bg-white hover:text-black font-semibold py-3 px-8 rounded-lg transition duration-300">
+        <Link href="/claim-form" className="bg-[#E62600] mt-10 text-white hover:bg-white hover:text-black font-semibold py-3 px-8 rounded-lg transition duration-300">
           Make A Claim
-        </a>
+        </Link>
       </div>
 
       {/* Decorative Bottom Skew */}

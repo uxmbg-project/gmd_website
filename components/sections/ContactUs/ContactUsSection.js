@@ -6,15 +6,15 @@ import Hero from '../Hero'
 const locations = {
   WA: {
     state: 'Western Australia',
-    phone: '+61 8 6000 0000',
-    email: 'wa@gmdautogroup.com',
-    address: 'Perth, WA, Australia',
+    address: "50 Sussex St, Maylands WA 6051",
+    phone: "08 6377 3774",
+    email: "workshopwa@gmdautogroup.com.au",
   },
   TAS: {
     state: 'Tasmania',
-    phone: '+61 3 6000 0000',
-    email: 'tas@gmdautogroup.com',
-    address: 'Hobart, TAS, Australia',
+    address: "66 Charles St, Moonah TAS 7009",
+    phone: "03 6146 2220",
+    email: "workshoptas@gmdautogroup.com.au",
   },
   DEFAULT: {
     state: 'Australia',
@@ -102,7 +102,7 @@ const ContactUsSection = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-50 py-16 text-center">
+      <section className="bg-gray-50 py-5 text-center">
         <h3 className="text-2xl font-bold mb-3">
           Need Help With Your Vehicle?
         </h3>
