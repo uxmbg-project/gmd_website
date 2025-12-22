@@ -4,7 +4,7 @@ import TestimonialCards from './TestimonialCards';
 const TestimonialSection = () => {
   return (
     <div>
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-50 dark:bg-gray-50">
         <SectionHeading sectiontitle="What Our Clients Say" subtitle="Our Customers are our first priority" />
         <TestimonialCards />
       </section>

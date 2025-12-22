@@ -12,8 +12,8 @@ const NotAtFaultClaimSection = () => {
 
       {/* Hero Section */}
       <TextLeftImageRight 
-        title="Stress Free Not At Fault Claims in Australia" 
-        heading="National Motor Claims provides Australia’s top Not At Fault Claim service." 
+        title="Hassle Free Not At Fault Claims across the Australia" 
+        heading="GMD auto Group provides Australia’s top Not At Fault Claim service." 
         content="We know that being involved in a car accident can be a very stressful experience. We also understand that you shouldn’t be at a loss for an accident caused by another driver’s mistake.
         All the costs for a Not At Fault Car Accident Claim are claimed from the At Fault Driver. This means there is No Cost to you for using our service, provided that you were Not At Fault." 
         image="/images/NotAtFaultClaim/FamilyGoing.jpg"

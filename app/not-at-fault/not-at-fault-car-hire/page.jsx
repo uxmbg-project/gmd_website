@@ -3,7 +3,7 @@ import NotAtFaultCarHireSection from '../../../components/sections/NotAtFaultCar
 
 const page = () => {
   return (
-    <div>
+    <div className='dark:bg-white'>
       <NotAtFaultCarHireSection />
     </div>
   )

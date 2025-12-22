@@ -28,7 +28,7 @@ export default function TestimonialSlider() {
         {testimonials.map((t, idx) => (
           <div key={idx} className="keen-slider__slide w-full flex items-center justify-center p-6 sm:p-12">
             <div className=" rounded-xl  p-8 text-center">
-              <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4">“{t.quote}”</p>
+              <p className="text-lg md:text-xl text-gray-700 dark:text-gray-700 mb-4">“{t.quote}”</p>
               <h4 className="text-xl font-semibold text-red-600">— {t.name}</h4>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function TestimonialSlider() {
 
       <button
         onClick={() => slider.current?.prev()}
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/80 dark:bg-gray-700/80 hover:bg-white dark:hover:bg-gray-600 p-2 rounded-full shadow-md"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/80 dark:bg-gray-700/80 hover:bg-white dark:hover:bg-gray-700/80 p-2 rounded-full shadow-md"
       >
         &lt;
       </button>

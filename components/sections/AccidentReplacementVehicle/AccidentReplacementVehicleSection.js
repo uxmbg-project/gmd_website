@@ -4,7 +4,7 @@ import TextRightImageLeft from '../../common/TextRightImageLeft'
 
 const AccidentReplacementVehicleSection = () => {
   return (
-    <div className='pt-10'> 
+    <div className='pt-10 dark:bg-white'> 
         <TextLeftImageRight 
             title="We Deliver Accident Replacement Vehicles"
             heading="Were you not at fault for the Accident and urgently require a replacement vehicle?"

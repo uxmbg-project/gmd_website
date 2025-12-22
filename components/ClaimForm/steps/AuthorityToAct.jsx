@@ -18,9 +18,9 @@ const AuthorityToAct = ({ formData, setFormData }) => {
 
       <div className="space-y-4 p-4 border rounded bg-white">
         <p className="text-sm leading-6 text-gray-700">
-          I/We authorize <strong>GMD Auto Group</strong> to act on my / our behalf to recover
+          I/We authorize <strong>GMD Auto Group | ABN: 91 670 233 422</strong> or GMD Authorized representative to act on my / our behalf to recover
           the losses I/we have suffered as a result of this motor accident.  
-          I appoint GMD Auto Group as my/our agent for the purpose of:
+          I appoint GMD Auto Group or GMD Authorized representative as my/our agent for the purpose of:
         </p>
 
         <ul className="list-disc ml-6 text-sm text-gray-700 leading-6">

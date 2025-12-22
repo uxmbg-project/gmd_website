@@ -1,10 +1,9 @@
-import React from 'react'
 
 const data = [
   {
-    title: "For more than 120 years, RAC has been giving back to WA & Tasmania",
+    title: " Driving Complete Automotive Solutions Across Australia",
     description:
-      "Established in 1905, RAC has proudly served Western Australians for over 120 years. With over 1.3 million members, RAC has evolved into one of the most trusted and recognised organisations in the state. As a purpose-led member organisation, it reinvests its profits to serve its members and the wider WA community RAC is committed to continuing to improve its services and experiences for its members and to champion change that will lead to a safer, sustainable and connected future for Western Australians. The principles of social purpose and member value are at the heart of RAC. Its Purpose, Vision and Mission not only guides its social and community impact focus, it also sits at the core of the overall strategy for the organisation.",
+      "GMD Auto Group is a leading Australian automotive service provider, established in 2023 and built on years of prior experience within the automotive repair and accident management industry. While the company is newly established, our team brings extensive hands-on knowledge and proven expertise gained from working across the same industry for many years. We specialise in smash repairs, mechanical services, vehicle rentals, and towing, delivering a complete end-to-end solution for customers across Australia. Our modern facilities, skilled technicians, and trusted processes ensure every vehicle is repaired to the highest standards of safety, quality, and reliability. Beyond repairs, GMD Auto Group is recognised for its customer advocacy and consultation services. We assist clients with fault and dispute resolution, not-at-fault claims, and insurance-related matters, working closely with insurers, assessors, and third-party providers to achieve fair and timely outcomes. Our goal is to remove complexity and stress, allowing customers to focus on getting back on the road with confidence. Through strong relationships with industry partners, suppliers, insurers, and service networks, we are able to provide efficient turnaround times and dependable support nationwide. These partnerships, combined with our customer-first approach, position GMD Auto Group as a trusted and growing name in the Australian automotive industry..",
   },
 ];
 

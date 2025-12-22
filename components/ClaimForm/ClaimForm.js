@@ -86,7 +86,7 @@ const ClaimForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-5xl mx-auto p-6 bg-white rounded-2xl shadow-xl mt-10 mb-20 border border-gray-200"
+      className="max-w-5xl mx-auto p-6 bg-white rounded-2xl bg:text-black shadow-xl mt-10 mb-20 border border-gray-200"
     >
       {/* Step Indicator */}
       <div className="flex justify-between mb-8">
