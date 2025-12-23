@@ -13,14 +13,14 @@ import PartnersSection from "@/components/common/Partners";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col dark:bg-white">
-      <Hero backgroundImage='/logo/HeroImages.png' Heading="GMD Auto Group" subtitle="Driven By Excellence" />
+      <Hero backgroundImage='/images/Hero/HeroTwo.jpg' Heading="GMD Auto Group" subtitle="Driven By Excellence" />
       <ServiceSection />
       <ChoosingUs />
       <ConsultationSection />
       <TestimonialSection />
       <GMDAbout />
       <FaqSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
 
     </div>
   );

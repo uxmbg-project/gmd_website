@@ -46,7 +46,7 @@ const ServiceSection = () => {
     <section className="py-12 bg-gray-50 dark:bg-white dark:text-white">
       <div className="max-w-7xl mx-auto px-4">
         <SectionHeading
-          sectiontitle="Our Services"
+          sectiontitle="What We Offer?"
           subtitle="Keeping your car running at its best with expert workmanship and attention to detail."
         />
         <ServicesCarousel>

@@ -45,9 +45,9 @@ const ContactUsSection = () => {
     <div className="bg-white text-black">
       {/* HERO */}
       <Hero
-        Heading="GMD Auto Group"
-        subtitle="Local automotive experts, wherever you are"
-        backgroundImage="/logo/HeroImages.png"
+        Heading="Get in Touch with GMD Auto Group"
+        subtitle="Contact us for expert smash repairs, vehicle servicing, and help with fault or not-at-fault insurance claims."
+        backgroundImage="/images/Hero/HeroFour.jpg"
       />
 
       {/* INTRO */}

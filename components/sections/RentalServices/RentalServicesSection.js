@@ -9,8 +9,10 @@ const RentalServicesSection = () => {
   return (
     <div>
       <ServiceHero
-        title="🚗 Rental & Courtesy Services"
+        title="Rental & Courtesy Services"
         content="We understand being without your car is inconvenient. GMD Auto offers flexible rental and courtesy car solutions while your vehicle is in our workshop for repairs."
+        backgroundImage="/images/Hero/HeroFour.jpg"
+
       />
 
       <HeadingLeftImageRight 

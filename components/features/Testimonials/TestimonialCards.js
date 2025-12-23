@@ -6,9 +6,9 @@ import "keen-slider/keen-slider.min.css";
 import React, { useEffect } from "react";
 
 const testimonials = [
-  { name: "John Doe", quote: "Fantastic service! My car has never run smoother. Highly recommend!" },
-  { name: "Jane Smith", quote: "Great staff and prompt repairs — they treated my car like their own." },
-  { name: "Alice Johnson", quote: "Very professional and transparent. I appreciated the updates and quality of work." },
+  { name: "Suleman Yousaf", quote: "Did my car service, experience was great and prices are very economical as well." },
+  { name: "Mary Yram", quote: "I’d like to extend my sincere thanks to the team at GMD Smash and Auto Repair for the excellent service and care in repairing my vehicle. The work was completed efficiently and to a high standard. I truly appreciate your professionalism and attention to detail. I would highly recommend this work shop. I will visit you again for sure." },
+  { name: "Naveen Dhull", quote: "Thanks all staff. Great workshop with good management i had accident ,, car was damaged they fixed it very committed time as well so fast. Thanks." },
 ];
 
 export default function TestimonialSlider() {

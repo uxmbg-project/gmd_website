@@ -12,7 +12,7 @@ const AutoServiceSection = () => {
       <ServiceHero
         title="Mechanical & Maintenance"
         content="We specialize in high-quality repair services, restoring your car to factory perfection with expert care."
-        backgroundImage="/logo/MechanicalImage.png"
+        backgroundImage="/images/Hero/HeroFour.jpg"
       />
 
       <HeadingLeftImageRight 

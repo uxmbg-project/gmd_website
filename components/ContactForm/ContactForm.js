@@ -134,6 +134,7 @@ const ContactForm = () => {
                 First Name
               </label>
               <input
+                required
                 type="text"
                 name="firstName"
                 value={formData.firstName}
@@ -151,6 +152,7 @@ const ContactForm = () => {
                 Last Name
               </label>
               <input
+                required
                 type="text"
                 name="lastName"
                 value={formData.lastName}
@@ -169,6 +171,7 @@ const ContactForm = () => {
               Phone
             </label>
             <input
+              required
               type="text"
               name="phone"
               value={formData.phone}
@@ -186,6 +189,7 @@ const ContactForm = () => {
               Email
             </label>
             <input
+              required
               type="email"
               name="email"
               value={formData.email}
@@ -203,6 +207,7 @@ const ContactForm = () => {
               Message
             </label>
             <textarea
+              required
               name="message"
               value={formData.message}
               onChange={handleChange}

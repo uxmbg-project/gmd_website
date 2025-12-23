@@ -15,7 +15,7 @@ const ServiceHero = ({
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
+    <section className="relative w-full overflow-hidden h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px]">
       {/* Tilted Background */}
       <div className="absolute inset-0 -z-10 transform -skew-y-3 origin-top-left">
         <div className="relative w-full h-full">

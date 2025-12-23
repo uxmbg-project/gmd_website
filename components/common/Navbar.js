@@ -53,31 +53,23 @@ export default function Navbar() {
   };
 
   return (
-    <>
+    <div className="">
       <nav className="w-full bg-white shadow-md h-16 flex items-center px-4 md:px-6 fixed z-50">
         
-        {/* Logo Fixed */}
-        {/* <div className="flex-shrink-0">
-          <Link href="/">
-            <div className="relative w-36 h-12 cursor-pointer">
-              <Image
-                src="/logo/LogoWithNoText.png"
-                alt="GMD Auto Group Logo"
-                fill
-                priority
-                className="object-contain"
-              />
-            </div>
-          </Link>
-        </div> */}
-        <div className="text-center mb-8 mt-8">
-          <div className="text-red-600 leading-[0.5] text-lg font-bold">
-            GMD Auto Group
-          </div>
-          {/* <div className="mx-auto mt-1 w-24 h-1 bg-[#E62600] rounded"></div> */}
-          {/* <div className="mx-auto mt-1 leading-[1.5]  text-xs text-black font-bold font-10 rounded">Driven By Excellence</div> */}
+
+        <div className="flex-shrink-0 sm:justify-center">
+        <Link href="/" className="relative w-48 h-20 cursor-pointer block">
+          <Image
+            src="/logo/logover.png"
+            alt="GMD Auto Group Logo"
+            fill
+            priority
+            className="object-contain"
+          />
+        </Link>
       </div>
 
+        
         <div className="flex-1" />
 
         {/* Desktop Menu */}
@@ -161,6 +153,6 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
-    </>
+    </div>
   );
 }

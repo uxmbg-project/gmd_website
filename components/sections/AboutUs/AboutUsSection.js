@@ -19,9 +19,9 @@ const AboutUsSection = () => {
     <div className="bg-white text-black overflow-hidden">
       {/* HERO */}
       <Hero
-        Heading="GMD Autos & Smash Repairs"
-        subtitle="Modern automotive care built on trust and precision"
-        backgroundImage="/images/PlanBackground.png"
+        Heading="Complete Auto Care You Can Trust"
+        subtitle="Smash Repairs, Vehicle Servicing & Expert Support for Fault and Not-At-Fault Insurance Claims"
+        backgroundImage="/images/Hero/HeroThree.jpg"
       />
 
       {/* INTRO */}

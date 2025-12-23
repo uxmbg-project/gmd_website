@@ -4,12 +4,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const partnersData = [
-  { name: "Platinum Taxi Rideshare Club", logo: "/images/partners/partner1.png" },
-  { name: "Cams Club", logo: "/images/partners/partner2.png" },
-  { name: "UXMBG Group", logo: "/images/partners/partner3.png" },
-  { name: "Platinum Panel Repairs", logo: "/images/partners/partner4.png" },
-  { name: "Partner 5", logo: "/images/partners/partner5.png" },
-  { name: "Partner 6", logo: "/images/partners/partner6.png" },
+  { name: "Platinum Taxi Rideshare Club", logo: "/images/Partners/P6.png" },
+  { name: "Brisbane Ride Share Club", logo: "/images/Partners/p7.png" },
+  { name: "CamsClub", logo: "/images/Partners/P1.png" },
+  { name: "Platinum Panel Repairs", logo: "/images/Partners/P2.png" },
+  { name: "Partner 5", logo: "/images/Partners/P3.png" },
+  { name: "Partner 6", logo: "/images/Partners/P4.png" },
 ];
 
 const PartnersSection = () => {
@@ -56,7 +56,7 @@ const PartnersSection = () => {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-12 md:h-16 object-contain"
+                className="h-30 md:h-30 object-contain"
               />
             ) : (
               <span className="text-gray-900 dark:text-white font-semibold text-sm md:text-base text-center">
