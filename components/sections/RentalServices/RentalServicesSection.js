@@ -23,7 +23,6 @@ const RentalServicesSection = () => {
 
       <HeadingWithImageSlider
         heading="Vehicle Rental Options"
-        icon={<ArrowUpToLineIcon className="text-red-600" />}
         points={[
           "Courtesy Vehicles: Available for short-term mechanical or minor body repairs (subject to availability).",
           "Replacement Hire Cars: We partner with leading rental agencies to secure a suitable replacement vehicle for the duration of your service or smash repair.",

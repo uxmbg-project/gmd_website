@@ -9,8 +9,9 @@ const TowingServicesSection = () => {
   return (
     <div>
       <ServiceHero
-        title="🛣️ Towing Services"
+        title="Towing Services"
         content="When the unexpected happens, GMD Auto is here to help. We offer reliable, fast, and safe towing services for breakdowns and accidents across the region."
+        backgroundImage='/images/services/TowServiceTowOne.jpg/TowTwo.jpg'
       />
 
       <HeadingLeftImageRight 
@@ -21,7 +22,6 @@ const TowingServicesSection = () => {
 
       <HeadingWithImageSlider
         heading="Emergency 24-Hour Towing"
-        icon={<ArrowUpToLineIcon className="text-red-600" />}
         points={[
           "Accident Towing: We arrive quickly, secure your vehicle, and transport it directly to our secure workshop for assessment and repair.",
           "Breakdown Towing: If your car won't start or breaks down, we'll get it to our facility or a location of your choice.",

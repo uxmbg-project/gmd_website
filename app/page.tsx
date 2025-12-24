@@ -4,9 +4,9 @@ import ServiceSection from "@/components/features/ServiceSection/ServiceSection"
 import TestimonialSection from "@/components/features/Testimonials/TestimonialSection"
 import ConsultationSection from "@/components/features/Consultation/ConsultationSection"
 import FaqSection from "@/components/features/Faq/FaqSection"
+import IntroStatsSection from "@/components/features/IntroStats/IntroStatsSection"
 import GMDAbout from "@/components/features/GMDAbout/GMDAboutSection"
 import PartnersSection from "@/components/common/Partners";
-
 
 
 
@@ -20,6 +20,7 @@ export default function Home() {
       <TestimonialSection />
       <GMDAbout />
       <FaqSection />
+      <IntroStatsSection />
       {/* <PartnersSection /> */}
 
     </div>

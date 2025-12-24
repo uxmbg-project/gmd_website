@@ -4,7 +4,8 @@ import HeadingLeftImageRight from '../../common/HeadingLeftImageRight'
 import HorizontalProcess from '../../common/HorizontalProcess'
 import HeadingWithImageSlider from '../../common/HeadingWithImageSlider'
 import ServiceHero from '../../common/ServiceHero'
-
+import FourRoundImageSection from '../../PageSections/FourRoundCardSection';
+import { cardData } from '../../../app/data/NotAtFaultClaimData'
 
 const BodyWorkSection = () => {
   return (
@@ -15,11 +16,16 @@ const BodyWorkSection = () => {
         backgroundImage='/images/services/BodyWorks/BodyWorkOne.jpg'
       />
 
+
       <HeadingLeftImageRight 
         heading="Restoring Your Vehicle to Factory Perfection"
         content="We specialize in high-quality body repairs, from removing minor door dings to restoring vehicles after major collisions. Our highly skilled panel beaters and spray painters guarantee excellence."
         image="/images/services/BodyWorks/BodyWorkOne.jpg"
       />
+      
+      {/* <FourRoundImageSection cards={cardData} /> */}
+
+      {/* <FourRoundImageSection cards={cardData} /> */}
 
       <HorizontalProcess
         heading="Body Works & Smash Repair Process"

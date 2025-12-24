@@ -8,36 +8,36 @@ const servicesData = [
     title: "Auto Services",
     description:
       "At GMD Auto & Smash Repair, our certified mechanical team provides comprehensive maintenance and repair to keep your car safe and running efficiently. We service all makes and models with integrity and expertise.",
-    imageSrc: "/images/services/AutoRepair.png",
+    imageSrc: "/images/services/AutoService/AutoServiceTwo.jpg",
     link: "/services/auto-services",
   },
   {
     title: "Body Repairs",
     description:
       "We specialize in high-quality body repairs, from removing minor door dings to restoring vehicles after major collisions. Our highly skilled panel beaters and spray painters guarantee excellence.",
-    imageSrc: "/images/services/BodyRepair.png",
+    imageSrc: "/images/services/BodyWorks/BodyWorkThree.jpg",
     link: "/services/body-works",
   },
   {
     title: "Towing Services",
     description:
       "When the unexpected happens, GMD Auto is here to help. We offer reliable, fast, and safe towing services for breakdowns and accidents across the region.",
-    imageSrc: "/images/Towing.png",
+    imageSrc: "/images/services/TowImage.jpg",
     link: "/services/towing-services",
   },
   {
     title: "Rental & Courtesy Services",
     description:
       "We understand being without your car is inconvenient. GMD Auto offers flexible rental and courtesy car solutions while your vehicle is in our workshop for repairs.",
-    imageSrc: "/images/services/Car.png",
+    imageSrc: "/images/Hero/HeroTwo.jpg",
     link: "/services/rental-services",
   },
   {
     title: "Windscreen Replacement",
     description:
       "Your windscreen is a critical structural component of your vehicle, providing up to 45% of the cabin's structural integrity in a frontal collision and preventing the roof from collapsing in a rollover.",
-    imageSrc: "/images/services/WindScreen.png",
-    link: "/services/wind-screen-replacement",
+    imageSrc: "/images/services/WindScreen.jpg",
+    link: "/images/services/WindScreen1.jpg",
   },
 ];
 

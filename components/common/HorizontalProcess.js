@@ -8,7 +8,7 @@ export default function VerticalProcess({
   points = [], // array of strings
 }) {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4 bg-gray-50 dark:text-black">
       {/* Heading */}
       {heading && (
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">

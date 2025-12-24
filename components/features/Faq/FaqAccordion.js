@@ -4,26 +4,37 @@ import { useState } from "react";
 
 const accordionData = [
   {
-    title: "Can I still use Auto Services if I am not a member?",
+    title: "Do you provide accident repair services?",
     description:
-      "Yes, you can! But by joining our GMD Auto Rewards Program you can become a member and get a 10% discount on labour performed by RAC",
+      "Yes! GMD Auto Group specializes in accident and smash repairs. Our team ensures your vehicle is restored to its original condition using high-quality parts and expert techniques.",
   },
   {
-    title: "Does your logbook servicing protect my new car warranty?",
+    title: "Do you service all car makes and models?",
     description:
-      "Yes, Auto Services is fully qualified to service new cars, adhering to all manufacturers' requirements and ensuring your car receives the required service without voiding your new car warranty.",
+      "Absolutely. We provide mechanical and maintenance services for all car makes and models, including sedans, SUVs, vans, and electric vehicles.",
   },
   {
-    title: "Where can the mobile mechanic work from?",
+    title: "Do you handle insurance claims for repairs?",
     description:
-      "Our Mobile Mechanic van will conveniently come to your home or workplace on weekdays within selected Perth Metro areas. Mobile car servicing, repairs and inspections can only be performed on safe, even ground.",
+      "Yes. Our team can assist with insurance claim processes for accident repairs, ensuring a smooth and hassle-free experience for you.",
   },
   {
     title: "Do you service electric vehicles?",
     description:
-      "Yes, we service electric vehicles. We offer EV Essential Services and Logbook Service options available at all 10 of our Auto Services centres.",
+      "Yes. GMD Auto Group offers essential and logbook services for electric vehicles at all of our centers, keeping your EV safe and fully functional.",
+  },
+  {
+    title: "How long does a typical repair or service take?",
+    description:
+      "Repair and service times depend on the scope of work. Minor servicing can be completed in a few hours, while major accident repairs may take several days. We always provide an estimated timeline.",
+  },
+  {
+    title: "Do you use genuine parts for repairs?",
+    description:
+      "Yes. We use high-quality, manufacturer-approved parts to ensure safety, reliability, and longevity for every vehicle we repair or service.",
   },
 ];
+
 
 const FaqAccordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -33,7 +44,7 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div className="w-full flex justify-center py-24">
+    <div className="w-full flex justify-center py-4">
       <div className="w-full max-w-5xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
 
         {accordionData.map((item, i) => (

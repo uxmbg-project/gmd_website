@@ -21,7 +21,6 @@ const WindScreenReplacementSection = () => {
 
       <HeadingWithImageSlider
         heading="Windscreen Replacement (Front Glass)"
-        icon={<ArrowUpToLineIcon className="text-red-600" />}
         points={[
           "Chip & Crack Assessment: We first determine if the damage can be repaired or if a full replacement is necessary.",
           "Precision Installation: Our process includes careful removal of the old glass, preparing the frame, and installing the new windscreen with industry-leading bonding agents for maximum safety and sealing.",
