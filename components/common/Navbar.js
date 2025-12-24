@@ -57,17 +57,18 @@ export default function Navbar() {
       <nav className="w-full bg-white shadow-md h-16 flex items-center px-4 md:px-6 fixed z-50">
         
 
-        <div className="flex-shrink-0 sm:justify-center">
-        <Link href="/" className="relative w-48 h-20 cursor-pointer block">
-          <Image
-            src="/logo/logover.png"
-            alt="GMD Auto Group Logo"
-            fill
-            priority
-            className="object-contain"
-          />
-        </Link>
-      </div>
+       <div className="flex-shrink-0 sm:justify-center text-center font-sans">
+  <Link href="/" className="cursor-pointer inline-block">
+    {/* Company Name */}
+    <div className="text-red-600 text-xl font-bold">GMD Auto Group</div>
+    
+    {/* Horizontal Line */}
+    {/* <div className="w-18 h-[1.5px] bg-red-600 mx-auto my-1"></div> */}
+    
+    {/* Tagline */}
+    <div className="text-gray-700 text-[7px] font-bold">Driven By Excellence</div>
+  </Link>
+</div>
 
         
         <div className="flex-1" />

@@ -9,8 +9,9 @@ const WindScreenReplacementSection = () => {
   return (
     <div>
       <ServiceHero
-        title="🛡️ Windscreen Replacement & Auto Glass Services"
+        title="Windscreen Replacement & Auto Glass Services"
         content="Your windscreen is a critical structural component of your vehicle, providing up to 45% of the cabin's structural integrity in a frontal collision and preventing the roof from collapsing in a rollover. At GMD Auto & Smash Repair, we ensure that your auto glass is repaired or replaced safely, quickly, and professionally."
+        backgroundImage='/images/services/WindSreenService/WindScreenOne.jpg'
       />
 
       <HeadingLeftImageRight 

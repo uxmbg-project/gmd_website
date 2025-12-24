@@ -111,10 +111,13 @@ const AboutUsSection = () => {
               data-aos="fade-up"
               className="text-gray-600 mb-8"
             >
-              GMD Auto Group is a trusted automotive service provider dedicated to delivering reliable, high-quality vehicle care. We specialize in mechanical servicing, smash repairs, and insurance claim support, ensuring every vehicle is handled with precision and professionalism.
-              Our focus is on honest pricing, quality workmanship, and dependable service, helping customers make informed decisions and keep their vehicles performing at their best. Backed by a team of highly trained professionals, GMD Auto Group provides automotive solutions you can trust — every time.
-            </p>
+             Founded in 2023, GMD Auto Group has quickly established itself as a trusted leader in the Australian automotive industry. With years of combined experience, we provide comprehensive solutions including mechanical and collision repairs, insurance services, towing, and vehicle rentals. Our team is dedicated to delivering high-quality, reliable services that meet the diverse needs of our customers.
 
+We are proud to be an Australian company, committed to supporting local communities and keeping Australians moving safely on the road. At GMD Auto Group, we always follow Australian standards, ensuring that every repair, service, and process meets the highest levels of safety and quality.
+
+Whether it’s restoring a vehicle after an accident, arranging a rental, or providing expert mechanical care, GMD Auto Group combines expertise, integrity, and customer-focused service to deliver peace of mind. We are proud to be a company that communities can trust, driving Australia forward with professionalism, safety, and reliability.          
+                       
+            </p>
             <ul className="space-y-5">
               {[
                 // "Integrity: We operate with strong ethical standards in every aspect of our business, ensuring honesty, transparency, and trust in all our services.",

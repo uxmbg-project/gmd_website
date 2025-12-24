@@ -11,7 +11,7 @@ const TowingServicesSection = () => {
       <ServiceHero
         title="Towing Services"
         content="When the unexpected happens, GMD Auto is here to help. We offer reliable, fast, and safe towing services for breakdowns and accidents across the region."
-        backgroundImage='/images/services/TowServiceTowOne.jpg/TowTwo.jpg'
+        backgroundImage='/images/services/TowServiceTowOne.jpg/TowThree.jpg'
       />
 
       <HeadingLeftImageRight 
