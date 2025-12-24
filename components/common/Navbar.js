@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -36,6 +37,7 @@ export default function Navbar() {
         setNotAtFaultOpen(false);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -51,13 +53,27 @@ export default function Navbar() {
   };
 
   return (
-    <>
+    <div className="">
       <nav className="w-full bg-white shadow-md h-16 flex items-center px-4 md:px-6 fixed z-50">
-        {/* Logo */}
-        <div className="text-[#E62600] font-bold text-xl flex-shrink-0">GMD Auto Repairs</div>
+        
+
+       <div className="flex-shrink-0 sm:justify-center text-center font-sans">
+  <Link href="/" className="cursor-pointer inline-block">
+    {/* Company Name */}
+    <div className="text-red-600 text-xl font-bold">GMD Auto Group</div>
+    
+    {/* Horizontal Line */}
+    {/* <div className="w-18 h-[1.5px] bg-red-600 mx-auto my-1"></div> */}
+    
+    {/* Tagline */}
+    <div className="text-gray-700 text-[7px] font-bold">Driven By Excellence</div>
+  </Link>
+</div>
+
+        
         <div className="flex-1" />
 
-        {/* Desktop Menu (LG and above only) */}
+        {/* Desktop Menu */}
         <ul className="hidden lg:flex flex-row gap-8 text-black font-semibold items-center">
           <li className="hover:text-[#E62600] transition">
             <Link href="/">Home</Link>
@@ -79,7 +95,10 @@ export default function Navbar() {
             {isServicesOpen && (
               <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-md py-2 min-w-[200px] max-w-xs text-sm z-50">
                 {servicesItems.map((item, idx) => (
-                  <li key={idx} className="px-4 py-2 hover:bg-gray-100 hover:text-[#E62600]">
+                  <li
+                    key={idx}
+                    className="px-4 py-2 hover:bg-gray-100 hover:text-[#E62600]"
+                  >
                     <Link href={item.href}>{item.title}</Link>
                   </li>
                 ))}
@@ -99,7 +118,10 @@ export default function Navbar() {
             {isNotAtFaultOpen && (
               <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-md py-2 min-w-[200px] max-w-xs text-sm z-50">
                 {notAtFaultItems.map((item, idx) => (
-                  <li key={idx} className="px-4 py-2 hover:bg-gray-100 hover:text-[#E62600]">
+                  <li
+                    key={idx}
+                    className="px-4 py-2 hover:bg-gray-100 hover:text-[#E62600]"
+                  >
                     <Link href={item.href}>{item.title}</Link>
                   </li>
                 ))}
@@ -113,7 +135,7 @@ export default function Navbar() {
 
           <li>
             <Link
-              href="/make-a-claim"
+              href="/claim-form"
               className="bg-[#E62600] text-white px-4 py-2 rounded-md hover:bg-red-700 transition shadow-md"
             >
               Make a Claim
@@ -121,7 +143,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile/MD Hamburger (Sidebar) */}
+        {/* Mobile/MD Hamburger */}
         <div
           className="lg:hidden text-black cursor-pointer text-3xl ml-auto"
           onClick={() => setSidebarOpen(true)}
@@ -130,8 +152,8 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Sidebar for medium & smaller screens */}
+      {/* Sidebar */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
-    </>
+    </div>
   );
 }

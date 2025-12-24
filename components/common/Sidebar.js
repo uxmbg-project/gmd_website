@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Sidebar({ isOpen, onClose }) {
   const [isServicesOpen, setServicesOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Sidebar({ isOpen, onClose }) {
   ];
 
   const notAtFaultItems = [
-    { title: "Not At Fault Claim", href: "/service/not-at-fault-claims" },
-    { title: "Not At Fault Hire", href: "/services/not-at-fault-car-hire" },
-    { title: "Accident Replacement Vehicle", href: "/services/accident-replacement-vehicle" },
+    { title: "Not At Fault Claim", href: "/not-at-fault/not-at-fault-claims" },
+    { title: "Not At Fault Hire", href: "/not-at-fault/not-at-fault-car-hire" },
+    { title: "Accident Replacement Vehicle", href: "/not-at-fault/accident-replacement-vehicle" },
   ];
 
   // Prevent scrolling when sidebar is open
@@ -32,9 +33,9 @@ export default function Sidebar({ isOpen, onClose }) {
 
   return (
     <div
-      className={`fixed top-0 right-0 h-full w-72 bg-white border-red-600 transform ${
+      className={`fixed dark:text-black top-0 right-0 h-full w-72 bg-white border-red-600 transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
-      } transition-transform duration-300 ease-in-out z-50 shadow-lg`}
+      } transition-transform duration-300 ease-in-out z-50 shadow-xl flex flex-col`}
     >
       {/* Close Button */}
       <div className="flex justify-end p-4">
@@ -47,7 +48,7 @@ export default function Sidebar({ isOpen, onClose }) {
       </div>
 
       {/* Sidebar Links */}
-      <ul className="flex flex-col gap-4 p-6 text-lg font-medium">
+      <ul className="flex flex-col gap-4 px-6 text-lg font-medium overflow-y-auto pb-24">
         <li>
           <Link
             href="/"
@@ -68,23 +69,23 @@ export default function Sidebar({ isOpen, onClose }) {
           </Link>
         </li>
 
-        {/* Our Services */}
+        {/* Our Services Dropdown */}
         <li>
           <div
             onClick={() => setServicesOpen(!isServicesOpen)}
             className="flex justify-between items-center cursor-pointer hover:text-red-600 transition select-none"
           >
             Our Services
-            <span className="ml-2">{isServicesOpen ? "▴" : "▾"}</span>
+            <span>{isServicesOpen ? "▴" : "▾"}</span>
           </div>
           {isServicesOpen && (
-            <ul className="ml-4 mt-2 flex flex-col gap-2 border-l-2 border-red-200 pl-3">
+            <ul className="ml-3 mt-2 flex flex-col gap-2 border-l-2 border-red-200 pl-3">
               {servicesItems.map((item, idx) => (
                 <li key={idx}>
                   <Link
                     href={item.href}
                     onClick={handleLinkClick}
-                    className="hover:text-red-600 transition duration-200"
+                    className="hover:text-red-600 text-base transition"
                   >
                     {item.title}
                   </Link>
@@ -94,23 +95,23 @@ export default function Sidebar({ isOpen, onClose }) {
           )}
         </li>
 
-        {/* Not At Fault */}
+        {/* Not At Fault Dropdown */}
         <li>
           <div
             onClick={() => setNotAtFaultOpen(!isNotAtFaultOpen)}
             className="flex justify-between items-center cursor-pointer hover:text-red-600 transition select-none"
           >
             Not At Fault
-            <span className="ml-2">{isNotAtFaultOpen ? "▴" : "▾"}</span>
+            <span>{isNotAtFaultOpen ? "▴" : "▾"}</span>
           </div>
           {isNotAtFaultOpen && (
-            <ul className="ml-4 mt-2 flex flex-col gap-2 border-l-2 border-red-200 pl-3">
+            <ul className="ml-3 mt-2 flex flex-col gap-2 border-l-2 border-red-200 pl-3">
               {notAtFaultItems.map((item, idx) => (
                 <li key={idx}>
                   <Link
                     href={item.href}
                     onClick={handleLinkClick}
-                    className="hover:text-red-600 transition duration-200"
+                    className="hover:text-red-600 text-base transition"
                   >
                     {item.title}
                   </Link>
@@ -132,7 +133,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
         <li>
           <Link
-            href="/make-a-claim"
+            href="/claim-form"
             onClick={handleLinkClick}
             className="bg-red-600 text-white font-semibold px-4 py-2 rounded-md hover:bg-red-700 transition text-center block mt-4"
           >
@@ -140,6 +141,22 @@ export default function Sidebar({ isOpen, onClose }) {
           </Link>
         </li>
       </ul>
+
+      {/* Bottom Logo Section */}
+      <div className="mt-auto w-full pb-6 flex flex-col items-center">
+        {/* Line above logo */}
+        <div className="w-4/5 h-px bg-gray-300 mb-4"></div>
+
+        {/* Centered Logo */}
+        <div className="relative w-32 h-14">
+          <Image
+            src="/logo/Logo.png"
+            alt="GMD Auto Group Logo"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
     </div>
   );
 }

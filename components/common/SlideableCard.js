@@ -10,7 +10,7 @@ const SlideableCard = ({
   data = [],
 }) => {
   return (
-    <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Heading */}
@@ -34,6 +34,7 @@ const SlideableCard = ({
                     keen-slider__slide 
                     px-2 sm:px-3 md:px-4 
                     flex 
+                    py-10
                     justify-center
                     w-full
                   "

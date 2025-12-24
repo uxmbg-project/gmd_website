@@ -1,3 +1,4 @@
+"use client"
 import SectionHeading from '../SectionHeading'
 import ConsultationCard from './ConsultationCard'
 import ConsultationContent from './ConsultationContent'

@@ -3,7 +3,7 @@ import NotAtFaultClaimSection from "../../../components/sections/NotAtFaultClaim
 
 const page = () => {
   return (
-    <div>
+    <div className="dark:bg-white">
       <NotAtFaultClaimSection />       
     </div>
   )

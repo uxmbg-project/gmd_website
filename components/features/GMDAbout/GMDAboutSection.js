@@ -1,53 +1,30 @@
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const GMDSection = () => {
-  useEffect(() => {
-    AOS.init({ duration: 700, once: true });
-  }, []);
-
   return (
     <section className="relative w-full overflow-hidden">
       {/* Tilted Red Background */}
-      <div className="absolute inset-0 -z-10 transform -skew-y-3 -skew-y-3 origin-top-left">
-        <div className="bg-red-600 w-full h-full"></div>
-      </div>
-      
+      <div className="absolute inset-0 z-0 transform -skew-y-3 origin-top-left bg-red-600" />
 
       {/* Content Wrapper */}
-      <div className="relative max-w-2xl mx-auto px-4 text-center flex flex-col items-center py-16 md:py-20">
-
+      <div className="relative z-10 max-w-2xl mx-auto px-4 text-center flex flex-col items-center py-16 md:py-20">
+        
         {/* Heading */}
-        <h2
-          data-aos="fade-up"
-          className="text-3xl md:text-4xl font-extrabold text-white mb-2"
-        >
+        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
           About GMD Auto Group
         </h2>
 
-        {/* White Underline */}
-        <div
-          data-aos="fade-up"
-          className="w-16 h-1 bg-black rounded mb-4"
-        ></div>
+        {/* Underline */}
+        <div className="w-16 h-1 bg-black rounded mb-4" />
 
         {/* Subtitle */}
-        <p
-          data-aos="fade-up"
-          className="text-white/90 text-base md:text-lg max-w-xl"
-        >
-          GMD delivers professional automotive solutions with passion, expertise, and dedication.
+        <p className="text-white/90 text-base md:text-lg max-w-xl">
+          At <strong>GMD Auto Group</strong>, we provide professional automotive services with precision, reliability, and care. Our mission is to ensure every vehicle leaves our workshop safe, fully serviced, and performing at its best.
         </p>
 
-        {/* Short Highlight Paragraph */}
-        <p
-          data-aos="fade-up"
-          className="text-white/90 text-sm md:text-base mt-4 max-w-xl"
-        >
-          Reliable car services tailored to your needs, ensuring safety, efficiency, and performance.
+        {/* Highlight Paragraph */}
+        <p className="text-white/90 text-sm md:text-base mt-4 max-w-xl">
+          From routine maintenance to comprehensive repairs and insurance support, we combine expertise and dedication to deliver automotive solutions you can trust.
         </p>
 
       </div>

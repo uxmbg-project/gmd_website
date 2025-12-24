@@ -5,8 +5,8 @@ const items = [
   { icon: Award, label: "Certified & Skilled Team" },
   { icon: ShieldCheck, label: "Reliable & Trusted Service" },
   { icon: HardHat, label: "Professional Technicians" },
-  { icon: DoorOpen, label: "24/7 Emergency Vehicle Repair" },
-  { icon: PersonStanding, label: "Clients Trust Us for Over 28 Years" },
+  { icon: DoorOpen, label: "24/7 Towing Service" },
+  { icon: PersonStanding, label: "Clients Trust Us for Over the Years" },
 ];
 
 const IconCard = () => {
@@ -33,7 +33,7 @@ const IconCard = () => {
               <Icon className='text-[#E62600] opacity-80' size={70} />
               
               {/* grow pushes footer text down if needed so all heights stay equal */}
-              <p className="mt-4 font-xl text-lg font-semibold flex-grow flex items-center justify-center">
+              <p className="mt-4 font-xl text-lg font-semibold flex-grow flex items-center dark:text-black justify-center">
                 {item.label}
               </p>
             </div>

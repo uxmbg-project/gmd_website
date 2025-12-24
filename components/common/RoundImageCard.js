@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ClaimButton from "./ClaimButton";
+import Link from "next/link";
 
 const RoundImageCard = ({ title, content, image }) => {
   return (
@@ -27,7 +28,8 @@ const RoundImageCard = ({ title, content, image }) => {
 
         {/* CLAIM BUTTON */}
         <div className="mt-4">
-          <ClaimButton onClick={() => console.log("Claim request")} />
+          <ClaimButton text="Claim Now" href="/claim-form" />
+
         </div>
       </div>
     </div>

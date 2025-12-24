@@ -1,7 +1,7 @@
 const SectionHeading = ({ sectiontitle, subtitle }) => {
   return (
     <div className="text-center mb-8 mt-8">
-      <h2 className="text-gray-900 dark:text-gray-100 font-extrabold text-3xl md:text-4xl">
+      <h2 className="text-gray-900 dark:text-black font-extrabold text-3xl md:text-4xl">
         {sectiontitle}
       </h2>
       {/* Red underline / accent line */}
@@ -9,7 +9,7 @@ const SectionHeading = ({ sectiontitle, subtitle }) => {
 
       {/* Optional subtitle / dynamic sentence */}
       {subtitle && (
-        <p className="mt-4 text-gray-600 dark:text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+        <p className="mt-4 text-gray-600 dark:text-black text-base md:text-lg max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}

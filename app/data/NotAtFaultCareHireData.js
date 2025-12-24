@@ -22,7 +22,7 @@ export const cardData = [
     {
         title: "Van Hire",
         content: "For clients who need a Van for commercial use.",
-        image: '/images/NotAtFaultClaim/ExpertSupport.png'
+        image: '/images/Van.png'
     },
     {
         title: "Prestige Hire",

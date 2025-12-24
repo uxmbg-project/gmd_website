@@ -1,31 +1,64 @@
 "use client";
-
 import SectionHeading from "../SectionHeading";
 import ServicesCarousel from "./ServiceCarouselWrapper";
 import ServiceCard from "./ServiceCard";
 
+const servicesData = [
+  {
+    title: "Auto Services",
+    description:
+      "At GMD Auto & Smash Repair, our certified mechanical team provides comprehensive maintenance and repair to keep your car safe and running efficiently. We service all makes and models with integrity and expertise.",
+    imageSrc: "/images/services/AutoService/AutoServiceTwo.jpg",
+    link: "/services/auto-services",
+  },
+  {
+    title: "Body Repairs",
+    description:
+      "We specialize in high-quality body repairs, from removing minor door dings to restoring vehicles after major collisions. Our highly skilled panel beaters and spray painters guarantee excellence.",
+    imageSrc: "/images/services/BodyWorks/BodyWorkThree.jpg",
+    link: "/services/body-works",
+  },
+  {
+    title: "Towing Services",
+    description:
+      "When the unexpected happens, GMD Auto is here to help. We offer reliable, fast, and safe towing services for breakdowns and accidents across the region.",
+    imageSrc: "/images/services/TowImage.jpg",
+    link: "/services/towing-services",
+  },
+  {
+    title: "Rental & Courtesy Services",
+    description:
+      "We understand being without your car is inconvenient. GMD Auto offers flexible rental and courtesy car solutions while your vehicle is in our workshop for repairs.",
+    imageSrc: "/images/Hero/HeroTwo.jpg",
+    link: "/services/rental-services",
+  },
+  {
+    title: "Windscreen Replacement",
+    description:
+      "Your windscreen is a critical structural component of your vehicle, providing up to 45% of the cabin's structural integrity in a frontal collision and preventing the roof from collapsing in a rollover.",
+    imageSrc: "/images/services/WindScreen.jpg",
+    link: "/images/services/WindScreen1.jpg",
+  },
+];
+
 const ServiceSection = () => {
   return (
-    <section className="py-12 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12 bg-gray-50 dark:bg-white dark:text-white">
       <div className="max-w-7xl mx-auto px-4">
-        <SectionHeading sectiontitle="Our Services" subtitle="Keeping your car running at its best with expert workmanship and attention to detail." />
+        <SectionHeading
+          sectiontitle="What We Offer?"
+          subtitle="Keeping your car running at its best with expert workmanship and attention to detail."
+        />
         <ServicesCarousel>
-          <ServiceCard
-            title="Cooling System"
-            description="Our team can quickly fix the cooling system of your engine: flush it, check connections, hoses, and cap, and also conduct a pressure test."
-          />
-          <ServiceCard
-            title="Air Condition Service"
-            description="Our professional technicians will examine your car’s air conditioner, replace the lubricating oil, and carry out a system leak test."
-          />
-          <ServiceCard
-            title="Brake & Suspension Check"
-            description="Full brake & suspension inspection to keep your ride safe and smooth."
-          />
-          <ServiceCard
-            title="Air Induction Cleanup"
-            description="With the help of specialized equipment, our technicians will do all needed cleaning — including intake valves."
-          />
+          {servicesData.map((service, index) => (
+            <ServiceCard
+              key={index}
+              title={service.title}
+              description={service.description}
+              imageSrc={service.imageSrc}
+              link={service.link}
+            />
+          ))}
         </ServicesCarousel>
       </div>
     </section>

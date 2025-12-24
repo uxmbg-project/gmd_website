@@ -1,14 +1,180 @@
-import React from 'react'
-import Hero from '../Hero'
-import AboutUsContent from './AboutUsContent'
+"use client";
+
+import { useEffect } from "react";
+import Hero from "../Hero";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Link from "next/link";
 
 const AboutUsSection = () => {
-  return (
-    <div>
-        <Hero Heading="GMD Autos & Smash Repairs" subtitle="What you want to know About Us?"/>
-        <AboutUsContent />
-    </div>
-  )
-}
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
 
-export default AboutUsSection
+  return (
+    <div className="bg-white text-black overflow-hidden">
+      {/* HERO */}
+      <Hero
+        Heading="Complete Auto Care You Can Trust"
+        subtitle="Smash Repairs, Vehicle Servicing & Expert Support for Fault and Not-At-Fault Insurance Claims"
+        backgroundImage="/images/Hero/HeroThree.jpg"
+      />
+
+     
+
+      {/* WHY US */}
+      <section className="max-w-6xl mx-auto px-4 py-24">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h3
+              data-aos="fade-up"
+              className="text-3xl text-center font-bold mb-6"
+            >
+              Company Values
+            </h3>
+
+            <p
+              data-aos="fade-up"
+              className="text-gray-600 mb-8"
+            >
+              We focus on long-term reliability, transparency, and attention to
+              detail — ensuring every vehicle leaves our workshop safe and
+              performing at its best.
+            </p>
+
+            <ul className="space-y-5">
+              {[
+                "Integrity: We operate with strong ethical standards in every aspect of our business, ensuring honesty, transparency, and trust in all our services.",
+                "Customer-Focused: We believe in building genuine relationships through friendly service, open communication, and a commitment to understanding our customers’ needs.",
+                "Innovation: We continuously improve our processes, tools, and skills to deliver better results, smarter solutions, and greater value for our customers.",
+                "Commitment to Excellence: Our success is driven by a dedicated, highly trained team that brings energy, professionalism, and full commitment to every vehicle we service.",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  data-aos="fade-right"
+                  data-aos-delay={i * 100}
+                  className="flex items-start gap-4"
+                >
+                  <span className="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-red-600 text-red-600 text-sm">
+                    ✓
+                  </span>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* IMAGE BLOCK */}
+          <div
+            data-aos="fade-left"
+            className="relative h-72 md:h-[420px] rounded-3xl overflow-hidden border border-gray-200 bg-gray-100"
+          >
+            {/* Replace with real image later */}
+            <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">
+              <img src="/images/services/GMDAbout.png" className="object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-4 py-24">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+
+          {/* IMAGE BLOCK – LEFT */}
+          <div
+            data-aos="fade-right"
+            className="relative h-72 md:h-[420px] rounded-3xl overflow-hidden border border-gray-200 bg-gray-100"
+          >
+            <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">
+              <img
+                src="/images/services/GMDAbout.png"
+                className="object-contain"
+                alt="GMD Auto Group"
+              />
+            </div>
+          </div>
+
+          {/* CONTENT – RIGHT */}
+          <div>
+            <h3
+              data-aos="fade-up"
+              className="text-3xl text-center font-bold mb-6"
+            >
+              Who We Are & What We Do
+            </h3>
+
+            <p
+              data-aos="fade-up"
+              className="text-gray-600 mb-8"
+            >
+             Founded in 2023, GMD Auto Group has quickly established itself as a trusted leader in the Australian automotive industry. With years of combined experience, we provide comprehensive solutions including mechanical and collision repairs, insurance services, towing, and vehicle rentals. Our team is dedicated to delivering high-quality, reliable services that meet the diverse needs of our customers.
+
+We are proud to be an Australian company, committed to supporting local communities and keeping Australians moving safely on the road. At GMD Auto Group, we always follow Australian standards, ensuring that every repair, service, and process meets the highest levels of safety and quality.
+
+Whether it’s restoring a vehicle after an accident, arranging a rental, or providing expert mechanical care, GMD Auto Group combines expertise, integrity, and customer-focused service to deliver peace of mind. We are proud to be a company that communities can trust, driving Australia forward with professionalism, safety, and reliability.          
+                       
+            </p>
+            <ul className="space-y-5">
+              {[
+                // "Integrity: We operate with strong ethical standards in every aspect of our business, ensuring honesty, transparency, and trust in all our services.",
+                // "Customer-Focused: We believe in building genuine relationships through friendly service, open communication, and a commitment to understanding our customers’ needs.",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  data-aos="fade-left"
+                  data-aos-delay={i * 100}
+                  className="flex items-start gap-4"
+                >
+                  <span className="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-red-600 text-red-600 text-sm">
+                    ✓
+                  </span>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      {/* CTA */}
+      <section className="py-24 text-center">
+        <h3
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-extrabold mb-6"
+        >
+          Book With Confidence
+        </h3>
+
+        <p
+          data-aos="fade-up"
+          className="text-gray-600 max-w-2xl mx-auto mb-8"
+        >
+          From smash repairs to mechanical servicing, GMD Auto Group delivers
+          dependable automotive solutions you can rely on.
+        </p>
+
+        <Link
+          data-aos="fade-up"
+          href="/contact"
+          className="inline-flex items-center gap-2 border border-red-600 text-red-600 px-10 py-4 rounded-full font-semibold hover:bg-red-600 hover:text-white transition"
+        >
+          Contact Us
+        </Link>
+      </section>
+    </div>
+  );
+};
+
+export default AboutUsSection;
+
+
+
