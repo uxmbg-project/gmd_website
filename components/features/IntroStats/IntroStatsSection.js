@@ -20,7 +20,7 @@ const IntroStatsSection = ({
     { value: "4+", label: "Years Experience" },
     { value: "5,000+", label: "Vehicles Serviced" },
     { value: "100%", label: "Certified Technicians" },
-    { value: "99%", label: "Customer Satisfaction" },
+    { value: "95%", label: "Customer Satisfaction" },
   ],
 }) => {
   return (
